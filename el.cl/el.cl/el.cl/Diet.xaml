@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="el.cl.Diet"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:el.cl"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" Width="91.76">
+    <Grid Background="Gray" Margin="0,0,-0.592,0.68">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lb_日期" Content="1月1號" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.271,-0.092" Width="92" Background="#FFD4D4D4" HorizontalContentAlignment="Center" Height="25" Grid.ColumnSpan="2"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="44,97,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FFC1C1C1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="65,97,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FFC1C1C1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="21,97,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FFC1C1C1"/>
+        <Label x:Name="lb_valley" Content="穀0" HorizontalAlignment="Left" Margin="0,111,0,0" VerticalAlignment="Top" Height="25" Width="29" FontSize="9"/>
+        <Label x:Name="lb_bean" Content="豆0" HorizontalAlignment="Left" Margin="26,111,0,0" VerticalAlignment="Top" Height="25" Width="28" FontSize="9"/>
+        <Label x:Name="lb_veg" Content="蔬0" HorizontalAlignment="Left" Margin="54,112,0,0" VerticalAlignment="Top" Height="25" Width="29" FontSize="9" RenderTransformOrigin="-0.155,0.924"/>
+        <Label x:Name="lb_oil" Content="油0" HorizontalAlignment="Left" Margin="0,127,0,0" VerticalAlignment="Top" Height="25" Width="29" FontSize="9"/>
+        <Label Content="果0" HorizontalAlignment="Left" Margin="26,127,0,0" VerticalAlignment="Top" Height="25" Width="28" FontSize="9"/>
+        <Label Content="乳0" HorizontalAlignment="Left" Margin="54,127,0,0" VerticalAlignment="Top" Height="25" Width="29" FontSize="9"/>
+        <Label x:Name="lb_person" Content="人500" HorizontalAlignment="Left" Margin="0,145,0,0" VerticalAlignment="Top" Width="84" Height="26" FontSize="9"/>
+        <Label x:Name="lb_cal" Content="熱0 Kcal" HorizontalAlignment="Left" Margin="44,145,0,0" VerticalAlignment="Top" Width="78" Height="26" FontSize="9"/>
+        <Label x:Name="lb_na" Content="鈉0mg" HorizontalAlignment="Left" Margin="0,164,0,0" VerticalAlignment="Top" Width="84" Height="25" FontSize="9"/>
+        <Label x:Name="lb_mg" Content="膳0mg" HorizontalAlignment="Left" Margin="44,164,0,0" VerticalAlignment="Top" Width="78" Height="25" FontSize="9"/>
+        <Label x:Name="lb_money" Content="金0元" HorizontalAlignment="Left" Margin="0,182,0,-8" VerticalAlignment="Top" Width="84" Height="25" FontSize="9"/>
+        <Label x:Name="lb_total" Content="總0元" HorizontalAlignment="Left" Margin="44,182,0,-8" VerticalAlignment="Top" Width="118" Height="25" FontSize="9" Grid.ColumnSpan="2"/>
+    </Grid>
+</UserControl>

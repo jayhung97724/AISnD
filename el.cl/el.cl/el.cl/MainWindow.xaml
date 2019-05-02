@@ -1,0 +1,48 @@
+﻿<Window x:Name="Form_Main" x:Class="el.cl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:el.cl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="820.424" Width="1413.432"
+		xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}" PreviewMouseLeftButtonUp="Window_PreviewMouseLeftButtonUp" Loaded="Form_Main_Loaded" Visibility="Visible" ShowInTaskbar="False" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True">
+    <ScrollViewer ScrollViewer.VerticalScrollBarVisibility="Auto">
+        <Grid ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="450*"/>
+                <ColumnDefinition Width="676*"/>
+                <ColumnDefinition Width="128*"/>
+                <ColumnDefinition Width="153*"/>
+            </Grid.ColumnDefinitions>
+
+            <DockPanel HorizontalAlignment="Left" Height="43" LastChildFill="False" VerticalAlignment="Top" Width="965" Margin="0,10,0,0" Grid.ColumnSpan="2">
+                <Button x:Name="btn_登入者" Content="登入者" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" DockPanel.Dock="Right" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Button x:Name="btn_搜尋" Content="搜尋" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" DockPanel.Dock="Right" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Button x:Name="btn_設定" Content="設定" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" DockPanel.Dock="Right" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Button x:Name="btn_通知提醒" Content="通知提醒" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" DockPanel.Dock="Right" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Button x:Name="btn_行事曆" Content="行事曆" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" DockPanel.Dock="Right" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Button x:Name="btn_總覽" Content="總覽" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" DockPanel.Dock="Right" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Button x:Name="btn_驗收" Content="驗收" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" DockPanel.Dock="Right" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Button x:Name="btn_決標" Content="決標" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" DockPanel.Dock="Right" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Button x:Name="btn_招標" Content="招標" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" DockPanel.Dock="Right" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <Button x:Name="btn_菜單" Content="菜單" HorizontalAlignment="Center" VerticalAlignment="Top" Width="75" DockPanel.Dock="Right" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="btn_菜單_Click"/>
+            </DockPanel>
+            <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" IsChecked="False"
+            x:Name="MenuToggleButton" Height="70" Margin="158,-12,262.048,733.04" Width="30">
+                <ToggleButton.ContextMenu>
+                    <ContextMenu/>
+                </ToggleButton.ContextMenu>
+            </ToggleButton>
+            <local:createDiet_root x:Name="cd" Height="713" Margin="100,58,99.976,0" VerticalAlignment="Top" Width="1207" Grid.ColumnSpan="4" Visibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True"/>
+            <local:Login_BasicInfo HorizontalAlignment="Left" Height="560" Margin="373,168,0,0" VerticalAlignment="Top" Width="657" Loaded="Login_BasicInfo_Loaded" Grid.ColumnSpan="2"/>
+        </Grid>
+    </ScrollViewer>
+</Window>

@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="el.cl.Diet_week"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:el.cl"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" Width="91.76">
+    <Grid Background="Gray" Margin="0,0,-0.24,-242">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lb_日期" Content="1月1號" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.271,-0.092" Width="92" Background="#FFD4D4D4" HorizontalContentAlignment="Center" Height="25" Grid.ColumnSpan="2"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="51,448,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FFC1C1C1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="72,448,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FFC1C1C1" Grid.ColumnSpan="2"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="30,448,0,0" VerticalAlignment="Top" Width="20" Height="20" Background="#FFC1C1C1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,472,0,0" TextWrapping="Wrap" VerticalAlignment="Top"
+                   Text="全榖雜糧&#x0a;豆魚蛋肉&#x0a;　　蔬菜&#x0a;　　油脂&#x0a;　　水果&#x0a;　　乳品" FontSize="11"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,568,0,0" TextWrapping="Wrap" VerticalAlignment="Top"
+            Text="用餐人數&#x0a;　總熱量&#x0a;鈉攝取量&#x0a;膳食纖維&#x0a;　總金額" FontSize="11"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="52,466,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="52,481,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="52,496,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="52,511,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="52,526,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="52,587,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="52,573,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="52,562,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="52,541,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="52,603,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="52,617,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+    </Grid>
+</UserControl>
