@@ -85,6 +85,9 @@
     <Compile Include="Login_BasicInfo.xaml.cs">
       <DependentUpon>Login_BasicInfo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Login_MealPeople.xaml.cs">
+      <DependentUpon>Login_MealPeople.xaml</DependentUpon>
+    </Compile>
     <Compile Include="uc_SearchTextBox.xaml.cs">
       <DependentUpon>uc_SearchTextBox.xaml</DependentUpon>
     </Compile>
@@ -111,6 +114,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Login_BasicInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login_MealPeople.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
