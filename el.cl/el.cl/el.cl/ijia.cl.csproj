@@ -88,6 +88,12 @@
     <Compile Include="Login_MealPeople.xaml.cs">
       <DependentUpon>Login_MealPeople.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Login_SchoolTab.xaml.cs">
+      <DependentUpon>Login_SchoolTab.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Login_SchoolTab_Class.xaml.cs">
+      <DependentUpon>Login_SchoolTab_Class.xaml</DependentUpon>
+    </Compile>
     <Compile Include="uc_SearchTextBox.xaml.cs">
       <DependentUpon>uc_SearchTextBox.xaml</DependentUpon>
     </Compile>
@@ -96,6 +102,15 @@
     </Compile>
     <Compile Include="createDiet.xaml.cs">
       <DependentUpon>createDiet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2.xaml.cs">
+      <DependentUpon>UserControl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl3.xaml.cs">
+      <DependentUpon>UserControl3.xaml</DependentUpon>
     </Compile>
     <Page Include="createDiet_root.xaml">
       <SubType>Designer</SubType>
@@ -121,6 +136,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Login_SchoolTab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login_SchoolTab_Class.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -142,6 +165,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="createDiet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

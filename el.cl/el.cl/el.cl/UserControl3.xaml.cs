@@ -16,14 +16,13 @@ using System.Windows.Shapes;
 namespace el.cl
 {
     /// <summary>
-    /// Login_MealPeople.xaml 的互動邏輯
+    /// UserControl3.xaml 的互動邏輯
     /// </summary>
-    public partial class Login_MealPeople : UserControl
+    public partial class UserControl3 : UserControl
     {
-        public Login_MealPeople()
+        public UserControl3()
         {
             InitializeComponent();
         }
-       
     }
 }

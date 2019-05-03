@@ -5,17 +5,16 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:el.cl"
              xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="el.cl.Login_MealPeople"
-             mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="800">
+             mc:Ignorable="d" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="840" Height="720">
     <UserControl.Resources>
         <System:Double x:Key="Double1">12</System:Double>
     </UserControl.Resources>
-    <StackPanel HorizontalAlignment="Left" Height="580" Margin="10,10,0,0" VerticalAlignment="Top" Width="780">
+    <StackPanel Margin="10,10,10,10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <Label Content="用餐人數設定" FontSize="18" FontWeight="Bold"/>
-        <StackPanel Height="507">
-            <TabControl Height="508" Background="#FFE8E7E7">
+        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <TabControl HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FFE8E7E7">
                 <TabItem Header="供餐學校1 | 台南市興隆國小" FontSize="16">
-                    <StackPanel Margin="0,1,0,-2.32" Background="#FFACABAB">
+                    <!--<StackPanel Margin="0,1,0,-2.32" Background="#FFACABAB">
                         <Grid Background="#FFE5E5E5" Margin="0,0,219,-1.32" Height="475">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
@@ -52,14 +51,12 @@
                             <TextBox x:Name="classPeople_Copy" Grid.Column="3" HorizontalAlignment="Left" Height="25" Margin="24,25,0,0" TextWrapping="Wrap" Text="人數" VerticalAlignment="Top" Width="36" FontSize="12" Grid.RowSpan="2" HorizontalContentAlignment="Right"/>
                             <TextBox x:Name="classPeople_Copy1" Grid.Column="5" HorizontalAlignment="Left" Height="25" Margin="27.164,25,0,0" TextWrapping="Wrap" Text="人數" VerticalAlignment="Top" Width="36" FontSize="12" Grid.RowSpan="2" HorizontalContentAlignment="Right"/>
                         </Grid>
-                    </StackPanel>
-
+                    </StackPanel>-->
+                    <local:Login_SchoolTab Height="Auto" Width="Auto"/>
                 </TabItem>
                 <TabItem Header="供餐學校2 | 台南市官田國小" FontSize="16">
-                    <Grid Background="#FFE5E5E5"/>
+                    <local:Login_SchoolTab Height="Auto" Width="Auto"/>
                 </TabItem>
-
-
             </TabControl>
         </StackPanel>
     </StackPanel>
