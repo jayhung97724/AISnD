@@ -16,13 +16,18 @@ using System.Windows.Shapes;
 namespace el.cl
 {
     /// <summary>
-    /// UserControl3.xaml 的互動邏輯
+    /// uc_Header.xaml 的互動邏輯
     /// </summary>
-    public partial class UserControl3 : UserControl
+    public partial class uc_Header : UserControl
     {
-        public UserControl3()
+        public uc_Header()
         {
             InitializeComponent();
+        }
+
+        private void Btn_ucSynch_Click(object sender, RoutedEventArgs e)
+        {
+            lab_UpdateTime.Content = "{x:Static sys:DateTime.Now}";
         }
     }
 }

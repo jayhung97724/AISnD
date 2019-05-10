@@ -70,6 +70,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Backend_Acceptance_Detail.xaml.cs">
+      <DependentUpon>Backend_Acceptance_Detail.xaml</DependentUpon>
+    </Compile>
     <Compile Include="createDiet_root.xaml.cs">
       <DependentUpon>createDiet_root.xaml</DependentUpon>
     </Compile>
@@ -94,6 +97,9 @@
     <Compile Include="Login_SchoolTab_Class.xaml.cs">
       <DependentUpon>Login_SchoolTab_Class.xaml</DependentUpon>
     </Compile>
+    <Compile Include="uc_Header.xaml.cs">
+      <DependentUpon>uc_Header.xaml</DependentUpon>
+    </Compile>
     <Compile Include="uc_SearchTextBox.xaml.cs">
       <DependentUpon>uc_SearchTextBox.xaml</DependentUpon>
     </Compile>
@@ -103,15 +109,10 @@
     <Compile Include="createDiet.xaml.cs">
       <DependentUpon>createDiet.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl1.xaml.cs">
-      <DependentUpon>UserControl1.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl2.xaml.cs">
-      <DependentUpon>UserControl2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControl3.xaml.cs">
-      <DependentUpon>UserControl3.xaml</DependentUpon>
-    </Compile>
+    <Page Include="Backend_Acceptance_Detail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="createDiet_root.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -156,6 +157,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="uc_Header.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="uc_SearchTextBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -165,18 +170,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="createDiet.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControl1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControl2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControl3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -214,6 +207,7 @@
       <Name>SearchTextBox</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\ShowMeTheXAML.MSBuild.1.0.12\build\net45\ShowMeTheXAML.MSBuild.targets" Condition="Exists('..\packages\ShowMeTheXAML.MSBuild.1.0.12\build\net45\ShowMeTheXAML.MSBuild.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

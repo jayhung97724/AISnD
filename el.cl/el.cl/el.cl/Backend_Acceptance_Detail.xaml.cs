@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace el.cl
 {
     /// <summary>
-    /// UserControl1.xaml 的互動邏輯
+    /// Backend_Acceptance_Detail.xaml 的互動邏輯
     /// </summary>
-    public partial class UserControl1 : UserControl
+    public partial class Backend_Acceptance_Detail : UserControl
     {
-        public UserControl1()
+        public Backend_Acceptance_Detail()
         {
             InitializeComponent();
         }
