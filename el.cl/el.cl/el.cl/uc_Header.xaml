@@ -23,25 +23,25 @@
         <Label Content="搜尋日期" HorizontalAlignment="Left" Margin="10,12,0,-6" VerticalAlignment="Top" Height="44" Width="65"/>
         <Label Content="至" HorizontalAlignment="Left" Margin="172,12,0,0" VerticalAlignment="Top" Height="25" Width="25" />
         <DatePicker x:Name="dp_startdate" HorizontalAlignment="Left" Margin="74,12,0,0" VerticalAlignment="Top" Width="89" Height="25"  SelectedDate="{x:Static sys:DateTime.Now}" HorizontalContentAlignment="Center"  />
-        <DatePicker x:Name="dp_startwk" HorizontalAlignment="Left" Margin="194,12,0,0" VerticalAlignment="Top" Width="89" Height="24" SelectedDate="{x:Static sys:DateTime.Now}" HorizontalContentAlignment="Center"/>
-        <Button x:Name="btn_ucPrint_Searchdate" Content="查詢期間" HorizontalAlignment="Left" Margin="288,12,0,0" VerticalAlignment="Top" Height="23" FontSize="12" BorderBrush="{x:Null}" Background="#FF3BB3BF" Width="80" />
-        <Button x:Name="btn_ucPrint_Cleardate" Content="消除期間" HorizontalAlignment="Left" Margin="375,12,0,0" VerticalAlignment="Top" Height="23" FontSize="12" Background="#FF7DBF3B" BorderBrush="{x:Null}" Width="80" Grid.ColumnSpan="2"   />
+        <DatePicker x:Name="dp_enddate" HorizontalAlignment="Left" Margin="194,12,0,0" VerticalAlignment="Top" Width="89" Height="24" SelectedDate="{x:Static sys:DateTime.Now}" HorizontalContentAlignment="Center"/>
+        <Button x:Name="btn_uch_Searchdate" Content="查詢期間" HorizontalAlignment="Left" Margin="288,12,0,0" VerticalAlignment="Top" Height="23" FontSize="12" BorderBrush="{x:Null}" Background="#FF3BB3BF" Width="80" />
+        <Button x:Name="btn_uch_Cleardate" Content="消除期間" HorizontalAlignment="Left" Margin="375,12,0,0" VerticalAlignment="Top" Height="23" FontSize="12" Background="#FF7DBF3B" BorderBrush="{x:Null}" Width="80" Grid.ColumnSpan="2"   />
         <Label Content="搜尋週數" HorizontalAlignment="Left" Margin="5,12,0,0" VerticalAlignment="Top" Height="25" Width="59" Grid.Column="2"/>
-        <ComboBox HorizontalAlignment="Left" Margin="70,12,0,0" VerticalAlignment="Top" Width="89" Height="25" Grid.Column="2" SelectedIndex="0">
+        <ComboBox x:Name="cb_StartWk" HorizontalAlignment="Left" Margin="70,12,0,0" VerticalAlignment="Top" Width="89" Height="25" Grid.Column="2" SelectedIndex="0">
             <ComboBoxItem Content="第一週"/>
             <ComboBoxItem Content="第二週"/>
             <ComboBoxItem Content="第三週"/>
             <ComboBoxItem Content="第四週"/>
         </ComboBox>
-        <ComboBox x:Name="cb_startwk" HorizontalAlignment="Left" Margin="190,12,0,0" VerticalAlignment="Top" Width="89" Height="25" Grid.Column="2" SelectedIndex="0">
+        <ComboBox x:Name="cb_EndWk" HorizontalAlignment="Left" Margin="190,12,0,0" VerticalAlignment="Top" Width="89" Height="25" Grid.Column="2" SelectedIndex="0">
             <ComboBoxItem Content="第一週"/>
             <ComboBoxItem Content="第二週"/>
             <ComboBoxItem Content="第三週"/>
             <ComboBoxItem Content="第四週"/>
         </ComboBox>
         <Label  x:Name="cb_endwk" Content="至" HorizontalAlignment="Left" Margin="162,12,0,0" VerticalAlignment="Top" Height="25" Width="25" Grid.Column="2"/>
-        <Button x:Name="btn_ucPrint_Searchweek" Content="查詢期間" HorizontalAlignment="Left" Margin="288,12,0,0" VerticalAlignment="Top" Height="23" FontSize="12" Grid.Column="2" BorderBrush="{x:Null}" Background="#FF3BB3BF" Width="80" />
-        <Button x:Name="btn_ucPrint_Cleardweek" Content="消除期間" HorizontalAlignment="Left" Margin="375,12,0,0" VerticalAlignment="Top" Height="23" FontSize="12" Grid.Column="2" Background="#FF7DBF3B" BorderBrush="{x:Null}" Width="80" />
+        <Button x:Name="btn_uch_Searchweek" Content="查詢期間" HorizontalAlignment="Left" Margin="288,12,0,0" VerticalAlignment="Top" Height="23" FontSize="12" Grid.Column="2" BorderBrush="{x:Null}" Background="#FF3BB3BF" Width="80" />
+        <Button x:Name="btn_uch_Cleardweek" Content="消除期間" HorizontalAlignment="Left" Margin="375,12,0,0" VerticalAlignment="Top" Height="23" FontSize="12" Grid.Column="2" Background="#FF7DBF3B" BorderBrush="{x:Null}" Width="80" />
         <Label Content="最新更新時間：" Grid.Column="3" HorizontalAlignment="Left" Margin="5,0,5,0" VerticalAlignment="Bottom" Width="91" Grid.ColumnSpan="2"  FontWeight="Bold"  />
         <Label x:Name="lab_UpdateTime" Content="" Grid.Column="4" HorizontalAlignment="Right" Margin="25,0,5,0" VerticalAlignment="Bottom" Width="158" Grid.ColumnSpan="2"  FontWeight="Bold"  />
     </Grid>

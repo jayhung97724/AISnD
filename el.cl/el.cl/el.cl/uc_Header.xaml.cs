@@ -27,7 +27,6 @@ namespace el.cl
 
         private void Btn_ucSynch_Click(object sender, RoutedEventArgs e)
         {
-            lab_UpdateTime.Content = "{x:Static sys:DateTime.Now}";
         }
     }
 }

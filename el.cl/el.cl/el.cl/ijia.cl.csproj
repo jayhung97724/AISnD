@@ -70,8 +70,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AwaOBid_Detail.xaml.cs" />
+    <Compile Include="AwaOBid_Detail_panel.xaml.cs" />
+    <Compile Include="Backend_Acceptance.xaml.cs">
+      <DependentUpon>Backend_Acceptance.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Backend_Acceptance_Detail.xaml.cs">
       <DependentUpon>Backend_Acceptance_Detail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Backend_Gallery.xaml.cs">
+      <DependentUpon>Backend_Gallery.xaml</DependentUpon>
     </Compile>
     <Compile Include="createDiet_root.xaml.cs">
       <DependentUpon>createDiet_root.xaml</DependentUpon>
@@ -109,7 +117,23 @@
     <Compile Include="createDiet.xaml.cs">
       <DependentUpon>createDiet.xaml</DependentUpon>
     </Compile>
+    <Page Include="AwaOBid_Detail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AwaOBid_Detail_panel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Backend_Acceptance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Backend_Acceptance_Detail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Backend_Gallery.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

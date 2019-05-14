@@ -7,46 +7,136 @@
              mc:Ignorable="d" 
              HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="846" Height="720">
     <StackPanel >
-        <Grid Height="388">
+        <Grid Height="263" Margin="32,0,0,0">
             <Label Content="驗收" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24" Width="60" FontWeight="Bold"/>
             <Label x:Name="itemName" Content="油菜" HorizontalAlignment="Left" Margin="75,10,0,0" VerticalAlignment="Top" FontSize="24" Width="150" FontWeight="Bold"/>
-            <Button x:Name="btn_ucPrint" Content="列印" HorizontalAlignment="Right" Margin="0,22,205,340" VerticalAlignment="Stretch" Height="Auto"  />
-            <Button x:Name="btn_ucExport" Content="匯出Excel" HorizontalAlignment="Right" Margin="0,22,107,340" VerticalAlignment="Stretch" Height="Auto"/>
-            <Button x:Name="btn_ucSynch" Content="同步" Margin="0,22,33,340" VerticalAlignment="Stretch" Height="Auto" Click="Btn_ucSynch_Click" HorizontalAlignment="Right" Width="69"/>
-            <Grid Margin="0,78,0,144">
+            <Button x:Name="btn_ucPrint" Content="列印" HorizontalAlignment="Right" Margin="0,16,205,220" VerticalAlignment="Stretch" Height="Auto"  />
+            <Button x:Name="btn_ucExport" Content="匯出Excel" HorizontalAlignment="Right" Margin="0,16,107,220" VerticalAlignment="Stretch" Height="Auto"/>
+            <Button x:Name="btn_ucSynch" Content="同步" Margin="0,16,33,220" VerticalAlignment="Stretch" Height="Auto" HorizontalAlignment="Right" Width="69"/>
+            <Label Content="最新更新時間：" HorizontalAlignment="Right" Margin="0,0,179,186" VerticalAlignment="Bottom" Width="91"  FontWeight="Bold"  />
+            <Label x:Name="lab_UpdateTime" Content="" HorizontalAlignment="Right" Margin="0,0,33,185" VerticalAlignment="Bottom" Width="146"  FontWeight="Bold"  />
+            <Grid Margin="0,78,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="9*"/>
-                    <ColumnDefinition Width="85*"/>
+                    <ColumnDefinition Width="45*"/>
+                    <ColumnDefinition Width="362*"/>
                 </Grid.ColumnDefinitions>
-                <Label Content="類別" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                <Label Content="食材編號" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1"/>
-                <Label x:Name="itemID" Content="cw001" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1"/>
-                <Label x:Name="itemCategory" Content="蔬菜" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1"/>
-                <Label Content="日期" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top"/>
-                <Label x:Name="timeStamp" Content="2019/01/02" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="90"/>
-                <Label Content="供應廠商" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top"/>
-                <ComboBox x:Name="itemSupplier" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Width="90" Height="25"/>
-                <Label Content="廠牌" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Grid.Column="1" Margin="141,0,0,0"/>
-                <ComboBox x:Name="itemBrand" Grid.Column="1" HorizontalAlignment="Left" Margin="180,0,0,0" Grid.Row="3" VerticalAlignment="Top" Width="90" Height="25"/>
-                <Label Content="產品批號" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Grid.Column="1" Margin="290,0,0,0"/>
-                <TextBox x:Name="itemNumber" Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="353,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-                <Label Content="製造日期" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Top"/>
-                <Label Content="有效日期" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Top" Grid.Column="1" Margin="117,0,0,0"/>
-                <DatePicker x:Name="manufacturingDate" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Top" Height="25" Width="90"/>
-                <DatePicker x:Name="expiryDate" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Top" Height="25" Width="90" Margin="180,0,0,0"/>
+                <Label Content="類別" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="90"/>
+                <Label Content="食材編號" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Height="25" Width="90"/>
+                <Label x:Name="itemID" Content="cw001" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" Height="25" Width="46"/>
+                <Label x:Name="itemCategory" Content="蔬菜" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Height="25" Width="34"/>
+                <Label Content="日期" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Height="25" Width="90"/>
+                <Label x:Name="timeStamp" Content="2019/01/02" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="90" Height="25"/>
+                <Label Content="供應廠商" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Height="25" Width="90"/>
+                <ComboBox x:Name="itemSupplier" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Width="112" Height="25"/>
+                <Label Content="廠牌" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Grid.Column="1" Margin="164,24,0,0" Width="58" HorizontalContentAlignment="Right" Height="25" Grid.RowSpan="2"/>
+                <ComboBox x:Name="itemBrand" Grid.Column="1" HorizontalAlignment="Left" Margin="227,0,0,0" Grid.Row="3" VerticalAlignment="Top" Width="112" Height="25"/>
+                <Label Content="產品批號" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Grid.Column="1" Margin="363,0,0,0" Height="25" Width="72" HorizontalContentAlignment="Right"/>
+                <TextBox x:Name="itemNumber" Grid.Column="1" HorizontalAlignment="Left" Margin="440,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="112" Height="24"/>
+                <Label Content="製造日期" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Top" Height="25" Width="90"/>
+                <Label Content="有效日期" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Top" Grid.Column="1" Margin="132,0,0,0" Height="25" Width="90" HorizontalContentAlignment="Right"/>
+                <DatePicker x:Name="manufacturingDate" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Top" Height="25" Width="112"/>
+                <DatePicker x:Name="expiryDate" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="4" VerticalAlignment="Top" Width="112" Margin="227,0,0,0" Height="25"/>
+                <Label Content="進貨量" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Top" Height="25" Width="90"/>
+                <TextBox x:Name="itemQuantity" Grid.Column="1" HorizontalAlignment="Left" Height="25" Grid.Row="5" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="112"/>
+                <Label Content="單位" HorizontalAlignment="Left" Margin="132,0,0,0" VerticalAlignment="Top" Grid.Row="5" Grid.Column="1" Width="90" HorizontalContentAlignment="Right" Height="25"/>
+                <TextBox x:Name="itemUnit" Grid.Column="1" HorizontalAlignment="Left" Margin="227,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="112" Height="25"/>
+                <Label Content="食品認證標章" HorizontalAlignment="Left" Grid.Row="6" VerticalAlignment="Top" Height="27" Width="90"/>
+                <ComboBox x:Name="itemCertificateType" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Grid.Column="1" Grid.Row="6" Height="25"/>
+                <Label Content="認證標章編號" HorizontalAlignment="Left" Grid.Row="6" VerticalAlignment="Top" Height="27" Width="90" Grid.Column="1" Margin="132,0,0,0" HorizontalContentAlignment="Right"/>
+                <TextBox x:Name="itemCertificateID" Grid.Column="1" HorizontalAlignment="Left" Margin="227,0,0,0" Grid.Row="6" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="112" Height="25"/>
             </Grid>
-            <Label Content="最新更新時間：" HorizontalAlignment="Right" Margin="0,0,179,310" VerticalAlignment="Bottom" Width="91"  FontWeight="Bold"  />
-            <Label x:Name="lab_UpdateTime" Content="" HorizontalAlignment="Right" Margin="0,0,21,310" VerticalAlignment="Bottom" Width="158"  FontWeight="Bold"  />
-
+            <GridSplitter Margin="404,-134,406,-403" VerticalAlignment="Bottom" Width="4" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Stretch" VerticalContentAlignment="Stretch" MinHeight="800">
+                <GridSplitter.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </GridSplitter.RenderTransform>
+            </GridSplitter>
         </Grid>
+        <Grid Height="377" Margin="32,16,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" MinHeight="25"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" MinHeight="25" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" MinHeight="25"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" MinHeight="25"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto" MinHeight="25"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" MinHeight="25"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" MinHeight="25"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="36*"/>
+                <ColumnDefinition Width="9*"/>
+                <ColumnDefinition Width="362*"/>
+            </Grid.ColumnDefinitions>
+            <Label Content="０１" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="25" HorizontalContentAlignment="Right" FontWeight="Bold"/>
+            <GridSplitter Margin="7,0" VerticalAlignment="Top" Width="4" Height="25" Grid.Column="1" HorizontalAlignment="Center"/>
+            <Label Content="驗收數量、重量是否符合？" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="342" FontWeight="Bold"/>
+            <RadioButton x:Name="anser1_yes" Content="是" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Height="18" Width="34" GroupName="answer1"/>
+            <RadioButton x:Name="anser1_no" Content="不是" Grid.Column="2" HorizontalAlignment="Left" Margin="64,0,0,0" Grid.Row="1" VerticalAlignment="Top" Height="18" Width="46" GroupName="answer1"/>
+            <Label Content="０２" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="25" HorizontalContentAlignment="Right" FontWeight="Bold" Grid.Row="1" Margin="0,21,0,0" Grid.RowSpan="2"/>
+            <GridSplitter Margin="7,21,7,0" VerticalAlignment="Top" Width="4" Height="25" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" Grid.RowSpan="2"/>
+            <Label Content="外觀（含包裝）是否良好？" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="342" FontWeight="Bold" Grid.Row="1" Margin="0,21,0,0" Grid.RowSpan="2"/>
+            <RadioButton x:Name="anser2_yes" Content="是" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0.273,0,0" Grid.Row="3" VerticalAlignment="Top" Height="18" Width="34" GroupName="answer2"/>
+            <RadioButton x:Name="anser2_no" Content="不是" Grid.Column="2" HorizontalAlignment="Left" Margin="64,0.273,0,0" Grid.Row="3" VerticalAlignment="Top" Height="18" Width="46" GroupName="answer2"/>
+            <Label Content="０３" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="25" HorizontalContentAlignment="Right" FontWeight="Bold" Grid.Row="4" Margin="0,0.546,0,0" Grid.RowSpan="2"/>
+            <GridSplitter Margin="7,0.546,7,0" VerticalAlignment="Top" Width="4" Height="25" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="4" Grid.RowSpan="2"/>
+            <Label Content="非包裝食品顏色是否有異？" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="342" FontWeight="Bold" Grid.Row="4" Margin="0,0.546,0,0" Grid.RowSpan="2"/>
+            <RadioButton x:Name="anser3_yes" Content="是" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="5" VerticalAlignment="Top" Height="18" Width="34" GroupName="answer3"/>
+            <RadioButton x:Name="anser3_no" Content="不是" Grid.Column="2" HorizontalAlignment="Left" Margin="64,0,0,0" Grid.Row="5" VerticalAlignment="Top" Height="18" Width="46" GroupName="answer3"/>
+            <RadioButton x:Name="anser3_negate" Content="此為包裝食品" Grid.Column="2" HorizontalAlignment="Left" Margin="123,24.727,0,0" Grid.Row="4" VerticalAlignment="Top" Height="18" Width="119" Grid.RowSpan="2" GroupName="answer3"/>
+            <Label Content="０４" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="25" HorizontalContentAlignment="Right" FontWeight="Bold" Grid.Row="6" Margin="0,0.819,0,0"/>
+            <GridSplitter Margin="7,0.819,7,0" VerticalAlignment="Top" Width="4" Height="25" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="6"/>
+            <Label Content="非包裝食品是否有異味？" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="342" FontWeight="Bold" Grid.Row="6" Margin="0,0.819,0,0"/>
+            <RadioButton x:Name="anser4_yes" Content="是" Grid.Column="2" HorizontalAlignment="Left" Margin="10,25.727,0,0" Grid.Row="6" VerticalAlignment="Top" Height="17" Width="34" GroupName="answer4" Grid.RowSpan="2"/>
+            <RadioButton x:Name="anser4_no" Content="不是" Grid.Column="2" HorizontalAlignment="Left" Margin="64,0,0,0" Grid.Row="7" VerticalAlignment="Top" Height="18" Width="46" GroupName="answer4"/>
+            <RadioButton x:Name="anser4_negate" Content="此為包裝食品" Grid.Column="2" HorizontalAlignment="Left" Margin="123,0,0,0" Grid.Row="7" VerticalAlignment="Top" Height="18" Width="119" GroupName="answer4"/>
+            <Label Content="０５" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="25" HorizontalContentAlignment="Right" FontWeight="Bold" Grid.Row="8" Margin="0"/>
+            <GridSplitter Margin="7,0" VerticalAlignment="Top" Width="4" Height="25" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="8"/>
+            <Label Content="包裝食品可由食品標示及營養標示判斷？" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="342" FontWeight="Bold" Grid.Row="8" Margin="0,0.826,0,0"/>
+            <RadioButton x:Name="anser5_yes" Content="是" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0.826,0,0" Grid.Row="9" VerticalAlignment="Top" Height="18" Width="34" GroupName="answer5"/>
+            <RadioButton x:Name="anser5_no" Content="不是" Grid.Column="2" HorizontalAlignment="Left" Margin="64,0.826,0,0" Grid.Row="9" VerticalAlignment="Top" Height="18" Width="46" GroupName="answer5"/>
+            <RadioButton x:Name="anser5_negate" Content="此為非包裝食品" Grid.Column="2" HorizontalAlignment="Left" Margin="123,1.082,0,0" Grid.Row="9" VerticalAlignment="Top" Height="18" Width="119" Grid.RowSpan="2" GroupName="answer5"/>
+            <Label Content="０６" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="25" HorizontalContentAlignment="Right" FontWeight="Bold" Grid.Row="10" Margin="0,0.256,0,0"/>
+            <GridSplitter Margin="7,0.256,7,0" VerticalAlignment="Top" Width="4" Height="25" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="10"/>
+            <Label Content="溫度是否符合規定？" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="342" FontWeight="Bold" Grid.Row="10" Margin="0,0.256,0,0" Grid.RowSpan="2"/>
+            <RadioButton x:Name="anser6_yes" Content="是" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="11" VerticalAlignment="Top" Height="18" Width="34" GroupName="answer6"/>
+            <RadioButton x:Name="anser6_no" Content="不是" Grid.Column="2" HorizontalAlignment="Left" Margin="64,0,0,0" Grid.Row="11" VerticalAlignment="Top" Height="18" Width="46" GroupName="answer6"/>
+            <Label Content="０７" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="25" HorizontalContentAlignment="Right" FontWeight="Bold" Grid.Row="12"/>
+            <GridSplitter Margin="7,0" VerticalAlignment="Top" Width="4" Height="25" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="12"/>
+            <Label Content="質地是否符合要求？" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="342" FontWeight="Bold" Grid.Row="12"/>
+            <RadioButton x:Name="anser7_yes" Content="是" Grid.Column="2" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="13" VerticalAlignment="Top" Height="18" Width="34" GroupName="answer7"/>
+            <RadioButton x:Name="anser7_no" Content="不是" Grid.Column="2" HorizontalAlignment="Left" Margin="64,0,0,0" Grid.Row="13" VerticalAlignment="Top" Height="18" Width="46" GroupName="answer7"/>
+            <Button x:Name="btnConfirmAcceptance" Content="確認驗收" Margin="0,10,10,-12.88" Grid.Row="14" Grid.Column="2" Height="28" Width="120" HorizontalAlignment="Right"/>
+            <Button x:Name="btnConfirmAcceptance_Copy" Content="暫存結果" Margin="0,10,135,-12.88" Grid.Row="14" Grid.Column="2" Height="28" VerticalAlignment="Top" Width="120" HorizontalContentAlignment="Center" HorizontalAlignment="Right">
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+
 
     </StackPanel>
 </UserControl>

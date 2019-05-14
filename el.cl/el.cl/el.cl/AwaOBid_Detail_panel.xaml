@@ -1,0 +1,71 @@
+﻿<Grid x:Class="el.cl.AwaOBid_Detail_panel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:el.cl"
+             mc:Ignorable="d" 
+                          d:DesignHeight="500" d:DesignWidth="1200" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+    <Grid.RowDefinitions>
+        <RowDefinition Height="70"/>
+        <RowDefinition Height="40"/>
+        <RowDefinition Height="390*"/>
+    </Grid.RowDefinitions>
+    <local:uc_Header HorizontalAlignment="Stretch"  Margin="0,0,0,1" VerticalAlignment="Stretch" Grid.Row="0"/>
+    <DataGrid x:Name="dgr_AOB" HorizontalAlignment="Stretch" Margin="5,5,30,5" Grid.Row="2" VerticalAlignment="Stretch">
+        <DataGrid.ColumnHeaderStyle>
+            <Style TargetType="DataGridColumnHeader">
+                <Setter Property="FontSize" Value="12"/>
+            </Style>
+        </DataGrid.ColumnHeaderStyle>
+        <DataGrid.Columns>
+            <DataGridTextColumn x:Name="dgr_AOBDate" Header="日期" Width="2*" IsReadOnly="True"/>
+            <DataGridTextColumn x:Name="dgr_AOBName" Header="食材名稱" Width="4*" IsReadOnly="True" />
+            <DataGridTextColumn x:Name="dgr_AOBweight" Header="食材重量(Kg)" Width="3*"/>
+            <DataGridTextColumn x:Name="dgr_AOBUnit" Header="單位" Width="2*" IsReadOnly="True" />
+            <DataGridTemplateColumn x:Name="dgr_AOBUprice" Header="單價" Width="2*">
+                <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <TextBox/>
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn x:Name="dgr_AOBSubtotal" Header="小計" Width="2*">
+                <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <TextBox/>
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn x:Name="dgr_AOBSupplier" Header="供應商名稱" Width="4*">
+                <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <TextBox/>
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn x:Name="dgr_AOBSupplierNo" Header="供應商編號" Width="3*" IsReadOnly="True"/>
+            <DataGridTemplateColumn x:Name="dgr_AOBProdName" Header="產品名稱" Width="4*" >
+                <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <TextBox/>
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+            </DataGridTemplateColumn>
+            <DataGridTextColumn x:Name="dgr_AOBmfr" Header="製造商名稱" Width="4*" IsReadOnly="True"/>
+            <DataGridTemplateColumn x:Name="dgr_GMP" Header="認證標章" Width="3*" >
+                <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <TextBox/>
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+            </DataGridTemplateColumn>
+        </DataGrid.Columns>
+    </DataGrid>
+    <Label Content="選澤供貨廠商" HorizontalAlignment="Left" Margin="10,5,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+    <TextBox x:Name="tb_Supplie" HorizontalAlignment="Left" Margin="95,5,5,0" Grid.Row="1" VerticalAlignment="Top" Width="150"/>
+    <Button  x:Name="btn_SupplieIn" Content="一鍵輸入" HorizontalAlignment="Left" Margin="260,3,5,3" Grid.Row="1" VerticalAlignment="Top" Width="100"/>
+
+
+</Grid>
+

@@ -1,0 +1,85 @@
+﻿<UserControl x:Class="el.cl.Backend_Acceptance"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:el.cl"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="1201.384" Height="720">
+    <Grid Margin="0">
+        <Rectangle HorizontalAlignment="Left" Height="39" Margin="10,65,0,0" Stroke="Black" VerticalAlignment="Top" Width="275"/>
+        <local:uc_Header HorizontalAlignment="Left" Height="71" VerticalAlignment="Top" Width="1207"/>
+        <Label Content="O 符合標準" HorizontalAlignment="Left" Margin="106,71,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Width="86" Foreground="#FF75EA00">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
+        <Label Content="X 退貨" HorizontalAlignment="Left" Margin="207,71,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" Width="57" Foreground="#DDFF4343"/>
+        <Label Content="驗收狀況 :" HorizontalAlignment="Left" Margin="15,71,0,0" VerticalAlignment="Top" FontSize="14" Width="86" RenderTransformOrigin="0.605,0.607" FontWeight="Bold"/>
+        <DataGrid HorizontalAlignment="Left" Height="530" Margin="10,119,0,0" VerticalAlignment="Top" Width="1181">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="日期"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="類別"/>
+                <DataGridHyperlinkColumn Binding="{x:Null}" ContentBinding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="產品名稱"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="供應廠商"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="廠牌"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="製造日期"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="有效日期"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="進貨重(數)量"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="單位"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="驗收狀況"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="食材認證標章 (四章一Q)"/>
+                <DataGridTextColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="認證標章編號"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Margin="462,669,439,19" Orientation="Horizontal">
+            <Button x:Name="button_pageUp" Content="前一頁" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" >
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="pageBtn_1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="32" BorderThickness="0" Padding="0" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="pageBtn_2" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="32" BorderThickness="0" Padding="0" BorderBrush="{x:Null}" >
+                <Button.Foreground>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+                </Button.Foreground>
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuBarColorKey}}"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="pageBtn_3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="32" BorderThickness="0" Padding="0" BorderBrush="{x:Null}">
+                <Button.Foreground>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+                </Button.Foreground>
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuBarColorKey}}"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="pageBtn_4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="32" BorderThickness="0" Padding="0" BorderBrush="{x:Null}">
+                <Button.Foreground>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+                </Button.Foreground>
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.MenuBarColorKey}}"/>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="button_pageDown" Content="下一頁" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74">
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

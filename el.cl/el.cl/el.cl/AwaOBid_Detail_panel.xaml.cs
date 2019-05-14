@@ -16,14 +16,13 @@ using System.Windows.Shapes;
 namespace el.cl
 {
     /// <summary>
-    /// Backend_Acceptance_Detail.xaml 的互動邏輯
+    /// AwaOBid_Detail_panel.xaml 的互動邏輯
     /// </summary>
-    public partial class Backend_Acceptance_Detail : UserControl
+    public partial class AwaOBid_Detail_panel : Grid
     {
-        public Backend_Acceptance_Detail()
+        public AwaOBid_Detail_panel()
         {
             InitializeComponent();
         }
-        
     }
 }

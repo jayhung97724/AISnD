@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="el.cl.AwaOBid_Detail"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:el.cl"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1250" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+    <Grid>
+        <TabControl HorizontalAlignment="Stretch"  Margin="0,0,0,0" VerticalAlignment="Stretch">
+            <TabItem Header="蔬菜">
+                <local:AwaOBid_Detail_panel x:Name="ADP_Veget" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </TabItem>
+            <TabItem Header="水果">
+                <local:AwaOBid_Detail_panel x:Name="ADP_Friut" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </TabItem>
+            <TabItem Header="乳品">
+                <local:AwaOBid_Detail_panel x:Name="ADP_Dairy" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </TabItem>
+            <TabItem Header="肉畜品">
+                <local:AwaOBid_Detail_panel x:Name="ADP_Meat" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </TabItem>
+            <TabItem Header="禽畜品">
+                <local:AwaOBid_Detail_panel x:Name="ADP_Livestock" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </TabItem>
+            <TabItem Header="海鮮水產">
+                <local:AwaOBid_Detail_panel x:Name="ADP_Seafood" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </TabItem>
+            <TabItem Header="加工調理食品">
+                <local:AwaOBid_Detail_panel x:Name="ADP_ProcFood" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </TabItem>
+            <TabItem Header="南北貨_調味料">
+                <local:AwaOBid_Detail_panel x:Name="ADP_Seasoning" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </TabItem>
+            <TabItem Header="豆類">
+                <local:AwaOBid_Detail_panel x:Name="ADP_Bean" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </TabItem>
+            <TabItem Header="蛋類">
+                <local:AwaOBid_Detail_panel x:Name="ADP_Egg" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </TabItem>
+            <TabItem Header="麵食">
+                <local:AwaOBid_Detail_panel x:Name="ADP_Noodle" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </TabItem>
+            <TabItem Header="穀類雜糧">
+                <local:AwaOBid_Detail_panel x:Name="ADP_Cereal" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</UserControl>
