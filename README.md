@@ -14,3 +14,12 @@ This is the repo of a project designing desktop application using C# based on WP
 - 驗收詳情表單: `Backend_Acceptance_Detail`
 - 圖片詳情: `Backend_Gallery`
     - 時間搜尋: `uc_Header` (by Yan Ci)
+
+## Week 3
+- 設定: `Setting`
+    - 設定_基本資料: `Setting_BasicInfo`
+    - 設定_供餐學校: `Setting_MealSchool`
+        - 一間學校: `Setting_MealSchool_Section`
+            - 學校名稱: `Setting_MealSchool_Entry_Location`
+    - 設定_用餐人數_興隆國小: `Setting_MealPeople`
+        - 學校人數設定: `Login_MealPeople` (Week 1)

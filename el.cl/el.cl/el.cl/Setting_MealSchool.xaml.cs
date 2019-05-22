@@ -16,13 +16,14 @@ using System.Windows.Shapes;
 namespace el.cl
 {
     /// <summary>
-    /// Backend_Acceptance.xaml 的互動邏輯
+    /// Setting_MealSchool.xaml 的互動邏輯
     /// </summary>
-    public partial class Backend_Acceptance : UserControl
+    public partial class Setting_MealSchool : UserControl
     {
-        public Backend_Acceptance()
+        public Setting_MealSchool()
         {
             InitializeComponent();
         }
+
     }
 }

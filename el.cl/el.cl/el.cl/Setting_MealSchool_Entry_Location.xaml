@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="el.cl.Setting_MealSchool_Entry_Location"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:el.cl"
+             mc:Ignorable="d" 
+             d:DesignHeight="25" >
+    <Grid Width="353">
+        <ComboBox x:Name="county" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" SelectedIndex="0" >
+            <ComboBoxItem Content="台南市"/>
+        </ComboBox>
+        <ComboBox x:Name="district" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80" Margin="97,0,0,0" SelectedIndex="0">
+            <ComboBoxItem Content="中西區"/>
+        </ComboBox>
+        <ComboBox x:Name="schoolName" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" Margin="201,0,0,0" SelectedIndex="0">
+            <ComboBoxItem Content="興隆國小"/>
+        </ComboBox>
+
+    </Grid>
+</UserControl>

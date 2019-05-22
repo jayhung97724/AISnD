@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="el.cl.Setting_MealSchool"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:el.cl"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="780" Height="720">
+    <Grid HorizontalAlignment="Stretch" Margin="0,0,0,10">
+        <StackPanel Margin="0,0,0,72" VerticalAlignment="Top" >
+            <local:Setting_MealSchool_Section />
+            <local:Setting_MealSchool_Section />
+        </StackPanel>
+        <Button x:Name="button_confirm" Content="確定" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="101"/>
+        <Button x:Name="button_addSchool" Content="增加供餐學校" HorizontalAlignment="Right" Margin="0,0,116,10" VerticalAlignment="Bottom" Width="127">
+            <Button.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.GrayTextColorKey}}"/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.GrayTextColorKey}}"/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</UserControl>
