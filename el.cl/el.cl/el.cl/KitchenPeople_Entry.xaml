@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="el.cl.KitchenPeople_Entry"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:el.cl"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="542" Height="202" FontWeight="Bold">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Source="https://d1icd6shlvmxi6.cloudfront.net/gsc/RSAYQC/81/3c/31/813c3117564840699219a6e304ddf3ef/images/%E5%BB%9A%E5%8B%A4%E7%AE%A1%E7%90%86%E4%BA%BA%E5%93%A1_%E5%BB%9A%E5%8B%A4/u19484.png?token=a2ad1857955c2778d298825bb5896bde375597f824a1c5a64b05dcbfd77a8c28"/>
+        <Separator Margin="12,143,62,0" VerticalAlignment="Top" VerticalContentAlignment="Bottom" Background="#FF020202"/>
+        <Label x:Name="name" Content="王明貞" HorizontalAlignment="Left" Margin="37,113,0,0" VerticalAlignment="Top" FontWeight="Normal"/>
+        <Separator Margin="12,188,62,5" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom" Background="#FF020202"/>
+        <ComboBox HorizontalAlignment="Left" Margin="12,156,0,0" VerticalAlignment="Top" Width="98">
+            <ComboBoxItem Content="廚勤"/>
+            <ComboBoxItem Content="大廚"/>
+            <ComboBoxItem Content="廚師"/>
+            <ComboBoxItem Content="事務員"/>
+            <ComboBoxItem Content="書記"/>
+            <ComboBoxItem Content="出納"/>
+            <ComboBoxItem Content="會計"/>
+            <ComboBoxItem Content="其他"/>
+        </ComboBox>
+        <Label x:Name="phone" Content="076-409577" HorizontalAlignment="Left" Margin="151,27,0,0" VerticalAlignment="Top" FontWeight="Normal"/>
+        <DatePicker x:Name="start" HorizontalAlignment="Left" Margin="240,27,0,0" VerticalAlignment="Top" Height="25" Width="96"/>
+        <DatePicker x:Name="end" HorizontalAlignment="Left" Margin="368,27,0,0" VerticalAlignment="Top" Height="25" Width="96"/>
+        <Label Content="迄" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="341,27,0,0" FontWeight="Normal"/>
+        <Separator Margin="130,57,62,0" VerticalAlignment="Top" VerticalContentAlignment="Bottom" Background="#FF020202"/>
+        <Separator Margin="130,103,62,0" VerticalAlignment="Top" VerticalContentAlignment="Bottom" Background="#FF020202"/>
+        <Label x:Name="certificate" Content="中餐烹調-葷食 丙級" HorizontalAlignment="Left" Margin="176,70,0,0" VerticalAlignment="Top" FontWeight="Normal"/>
+        <Label x:Name="number" Content="25000" HorizontalAlignment="Left" Margin="368,73,0,0" VerticalAlignment="Top" FontWeight="Normal" RenderTransformOrigin="0.385,0.04" Width="51"/>
+        <ComboBox HorizontalAlignment="Left" Margin="151,111,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="校聘專任"/>
+            <ComboBoxItem Content="校聘兼職"/>
+            <ComboBoxItem Content="校聘臨時工"/>
+            <ComboBoxItem Content="外聘專任"/>
+            <ComboBoxItem Content="外聘兼職"/>
+            <ComboBoxItem Content="外聘臨時工"/>
+        </ComboBox>
+        <Label x:Name="school" Content="台南市中山國小 廚勤" HorizontalAlignment="Left" Margin="320,113,0,0" VerticalAlignment="Top" FontWeight="Normal" Width="144" HorizontalContentAlignment="Right"/>
+        <Label x:Name="notes" Content="其他描述" HorizontalAlignment="Left" Margin="151,156,0,0" VerticalAlignment="Top" FontWeight="Normal" Width="313" HorizontalContentAlignment="Center" Height="27"/>
+        <Image Source="pack://siteoforigin:,,,/Resources/edit.png" Width="12" Height="12" Margin="0,37,10,0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <Image x:Name="button_remove" Source="pack://siteoforigin:,,,/Resources/remove.png" Width="12" Height="12" Margin="0,37,36,0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+    </Grid>
+</UserControl>

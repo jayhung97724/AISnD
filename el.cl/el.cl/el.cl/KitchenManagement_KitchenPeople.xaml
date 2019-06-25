@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="el.cl.KitchenManagement_KitchenPeople"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:el.cl"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="780" Height="720">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="720" VerticalAlignment="Top" Width="634">
+            <local:KitchenPeople_Entry HorizontalAlignment="Left" Height="221" VerticalAlignment="Top" Width="624"/>
+        </Grid>
+        <Button x:Name="button_add" Height="36" Background="{x:Null}" Foreground="Black" Margin="0,20,46,0" FontSize="12" HorizontalAlignment="Right" VerticalAlignment="Top" BorderBrush="{x:Null}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="pack://siteoforigin:,,,/Resources/add.png" Width="18" Height="18" Margin="0,0,4,0">
+                </Image>
+                <TextBlock Text="增加" VerticalAlignment="Center" FontSize="14" />
+            </StackPanel>
+        </Button>
+        <Button x:Name="button_duplicate" Height="36" Background="{x:Null}" Foreground="Black" Margin="0,61,46,0" FontSize="12" HorizontalAlignment="Right" VerticalAlignment="Top" BorderBrush="{x:Null}">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="pack://siteoforigin:,,,/Resources/duplicate.png" Width="18" Height="18" Margin="0,0,4,0"/>
+                <TextBlock Text="複製" VerticalAlignment="Center" FontSize="14" />
+            </StackPanel>
+        </Button>
+    </Grid>
+</UserControl>

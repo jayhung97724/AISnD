@@ -48,6 +48,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -92,6 +93,15 @@
     </Compile>
     <Compile Include="Form_Login.xaml.cs">
       <DependentUpon>Form_Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KitchenManagement.xaml.cs">
+      <DependentUpon>KitchenManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KitchenManagement_KitchenPeople.xaml.cs">
+      <DependentUpon>KitchenManagement_KitchenPeople.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KitchenPeople_Entry.xaml.cs">
+      <DependentUpon>KitchenPeople_Entry.xaml</DependentUpon>
     </Compile>
     <Compile Include="Login_BasicInfo.xaml.cs">
       <DependentUpon>Login_BasicInfo.xaml</DependentUpon>
@@ -168,6 +178,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Form_Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KitchenManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KitchenManagement_KitchenPeople.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KitchenPeople_Entry.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -273,7 +295,18 @@
       <Name>SearchTextBox</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duplicate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\ShowMeTheXAML.MSBuild.1.0.12\build\net45\ShowMeTheXAML.MSBuild.targets" Condition="Exists('..\packages\ShowMeTheXAML.MSBuild.1.0.12\build\net45\ShowMeTheXAML.MSBuild.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
