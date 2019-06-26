@@ -24,7 +24,7 @@ This is the repo of a project designing desktop application using C# based on WP
     - 設定_用餐人數_興隆國小: `Setting_MealPeople`
         - 學校人數設定: `Login_MealPeople` (Week 1)
 
-## Weel 4
+## Week 4
 - 廚勤管理人員: `KitchenManagement`
     - 廚勤: `KitchenPeople`
         - 一位廚勤: `KitchenPeople_Entry`
