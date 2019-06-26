@@ -11,12 +11,14 @@
         <TabControl HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top" Width="916" Height="791">
             <TabItem Header="廚勤" FontSize="16">
                 <Grid Background="#FFE5E5E5">
-                    <local:KitchenManagement_KitchenPeople HorizontalAlignment="Left" Height="208" VerticalAlignment="Top" Width="890" FontSize="12" Margin="10,0,0,0"/>
+                    <local:KitchenPeople HorizontalAlignment="Left" Height="208" VerticalAlignment="Top" Width="825" FontSize="12" Margin="53,0,0,0"/>
 
                 </Grid>
             </TabItem>
             <TabItem Header="午秘" FontSize="16">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <local:LunchManager HorizontalAlignment="Left" Height="739" Margin="10,10,0,0" VerticalAlignment="Top" Width="890"/>
+                </Grid>
             </TabItem>
         </TabControl>
         <Label Content="自動計算總人數" HorizontalAlignment="Left" Margin="218,26,0,0" VerticalAlignment="Top" FontSize="8"/>

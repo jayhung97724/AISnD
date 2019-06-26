@@ -10,8 +10,8 @@
         <Image HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Source="https://d1icd6shlvmxi6.cloudfront.net/gsc/RSAYQC/81/3c/31/813c3117564840699219a6e304ddf3ef/images/%E5%BB%9A%E5%8B%A4%E7%AE%A1%E7%90%86%E4%BA%BA%E5%93%A1_%E5%BB%9A%E5%8B%A4/u19484.png?token=a2ad1857955c2778d298825bb5896bde375597f824a1c5a64b05dcbfd77a8c28"/>
         <Separator Margin="12,143,62,0" VerticalAlignment="Top" VerticalContentAlignment="Bottom" Background="#FF020202"/>
         <Label x:Name="name" Content="王明貞" HorizontalAlignment="Left" Margin="37,113,0,0" VerticalAlignment="Top" FontWeight="Normal"/>
-        <Separator Margin="12,188,62,5" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom" Background="#FF020202"/>
-        <ComboBox HorizontalAlignment="Left" Margin="12,156,0,0" VerticalAlignment="Top" Width="98">
+        <Separator Margin="12,191,62,0" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Bottom" Background="#FF020202"/>
+        <ComboBox HorizontalAlignment="Left" Margin="17,156,0,0" VerticalAlignment="Top" Width="98">
             <ComboBoxItem Content="廚勤"/>
             <ComboBoxItem Content="大廚"/>
             <ComboBoxItem Content="廚師"/>

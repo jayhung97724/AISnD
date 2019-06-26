@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="el.cl.KitchenManagement_KitchenPeople"
+﻿<UserControl x:Class="el.cl.LunchManager"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -8,7 +8,8 @@
              HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="780" Height="720">
     <Grid>
         <Grid HorizontalAlignment="Left" Height="720" VerticalAlignment="Top" Width="634">
-            <local:KitchenPeople_Entry HorizontalAlignment="Left" Height="221" VerticalAlignment="Top" Width="624"/>
+            <local:LunchManager_Entry HorizontalAlignment="Left" Height="275" VerticalAlignment="Top" Width="545" Margin="79,0,0,0"/>
+
         </Grid>
         <Button x:Name="button_add" Height="36" Background="{x:Null}" Foreground="Black" Margin="0,20,46,0" FontSize="12" HorizontalAlignment="Right" VerticalAlignment="Top" BorderBrush="{x:Null}">
             <StackPanel Orientation="Horizontal">

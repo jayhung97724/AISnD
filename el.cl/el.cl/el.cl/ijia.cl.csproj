@@ -97,8 +97,8 @@
     <Compile Include="KitchenManagement.xaml.cs">
       <DependentUpon>KitchenManagement.xaml</DependentUpon>
     </Compile>
-    <Compile Include="KitchenManagement_KitchenPeople.xaml.cs">
-      <DependentUpon>KitchenManagement_KitchenPeople.xaml</DependentUpon>
+    <Compile Include="KitchenPeople.xaml.cs">
+      <DependentUpon>KitchenPeople.xaml</DependentUpon>
     </Compile>
     <Compile Include="KitchenPeople_Entry.xaml.cs">
       <DependentUpon>KitchenPeople_Entry.xaml</DependentUpon>
@@ -114,6 +114,12 @@
     </Compile>
     <Compile Include="Login_SchoolTab_Class.xaml.cs">
       <DependentUpon>Login_SchoolTab_Class.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LunchManager.xaml.cs">
+      <DependentUpon>LunchManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LunchManager_Entry.xaml.cs">
+      <DependentUpon>LunchManager_Entry.xaml</DependentUpon>
     </Compile>
     <Compile Include="Setting.xaml.cs">
       <DependentUpon>Setting.xaml</DependentUpon>
@@ -185,7 +191,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="KitchenManagement_KitchenPeople.xaml">
+    <Page Include="KitchenPeople.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -206,6 +212,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Login_SchoolTab_Class.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LunchManager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LunchManager_Entry.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

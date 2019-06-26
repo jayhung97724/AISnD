@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace el.cl
 {
     /// <summary>
-    /// KitchenManagement_KitchenPeople.xaml 的互動邏輯
+    /// LunchManager_Entry.xaml 的互動邏輯
     /// </summary>
-    public partial class KitchenManagement_KitchenPeople : UserControl
+    public partial class LunchManager_Entry : UserControl
     {
-        public KitchenManagement_KitchenPeople()
+        public LunchManager_Entry()
         {
             InitializeComponent();
         }
