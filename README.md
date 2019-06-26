@@ -35,3 +35,8 @@ This is the repo of a project designing desktop application using C# based on WP
         - `duplicate`
         - `remove`
         - `edit`
+
+## Week 5
+- 最新消息_主頁: `News`
+    - 一則新聞: `News_Entry`
+- 食譜分享區: `Recipe_Sharing`

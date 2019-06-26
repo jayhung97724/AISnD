@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="el.cl.News"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:el.cl"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="936" Height="937">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="927" VerticalAlignment="Top" Width="926">
+            <TabItem x:Name="all" Header="全部訊息" FontSize="20">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem x:Name="urgent" Header="緊急通知" FontSize="20">
+                <Grid Background="#FFE5E5E5">
+                    <local:News_Entry Height="412" Margin="15,10,10,0" VerticalAlignment="Top" Width="Auto"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="admin" Header="主管機關公告" FontSize="20">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem x:Name="security" Header="食安通報" FontSize="20">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</UserControl>
