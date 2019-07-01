@@ -42,7 +42,7 @@
                 </ToggleButton.ContextMenu>
             </ToggleButton>
             <local:createDiet_root x:Name="cd" Height="713" Margin="100,58,99.976,0" VerticalAlignment="Top" Width="1207" Grid.ColumnSpan="4" Visibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True"/>
-            <local:Recipe_Sharing HorizontalAlignment="Left" Height="Auto" Margin="199,58,0,0" VerticalAlignment="Top" Width="1038" Grid.ColumnSpan="3"/>
+            <local:Permission_Control HorizontalAlignment="Left" Height="372" Margin="422,120,0,0" VerticalAlignment="Top" Width="679" Grid.ColumnSpan="2"/>
 
 
 

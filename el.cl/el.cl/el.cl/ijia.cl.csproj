@@ -127,6 +127,12 @@
     <Compile Include="News_Entry.xaml.cs">
       <DependentUpon>News_Entry.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Permission.xaml.cs">
+      <DependentUpon>Permission.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Permission_Control.xaml.cs">
+      <DependentUpon>Permission_Control.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Recipe_Sharing.xaml.cs">
       <DependentUpon>Recipe_Sharing.xaml</DependentUpon>
     </Compile>
@@ -249,6 +255,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="News_Entry.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Permission.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Permission_Control.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

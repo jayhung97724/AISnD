@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="el.cl.Permission"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:el.cl"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="930" Height="930">
+    <Grid>
+        <Button x:Name="button_confirm" Content="確定" HorizontalAlignment="Right" Margin="0,888,21,0" VerticalAlignment="Top" HorizontalContentAlignment="Center"/>
+        <Button x:Name="button_cancel" Content="取消" HorizontalAlignment="Right" Margin="0,888,101,0" VerticalAlignment="Top">
+            <Button.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.GrayTextColorKey}}"/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.GrayTextColorKey}}"/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </Button.Background>
+        </Button>
+        <Rectangle Height="60" VerticalAlignment="Top" Width="930" Fill="#FF5AB997"/>
+        <Label Content="管理權限" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Foreground="White"/>
+        <Label Content="泳翔食品股份有限公司" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Label Content="開立菜單" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <GridSplitter HorizontalAlignment="Stretch" Height="2" Margin="16,186,16,0" VerticalAlignment="Top"/>
+        <Label Content="已開啟此功能" HorizontalAlignment="Right" Margin="0,152,24,0" VerticalAlignment="Top" Foreground="#FF007FFD"/>
+        <Label Content="當該使用者開立菜單時，會顯示在此處。" HorizontalAlignment="Left" Margin="67,213,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="招標採購" HorizontalAlignment="Left" Margin="10,296,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <GridSplitter HorizontalAlignment="Stretch" Height="2" Margin="16,342,16,0" VerticalAlignment="Top"/>
+        <Label Content="已關閉此功能" HorizontalAlignment="Right" Margin="0,308,24,0" VerticalAlignment="Top" Foreground="#FF007FFD"/>
+        <Label Content="當該使用者招標採購時，會顯示在此處。" HorizontalAlignment="Left" Margin="67,369,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="驗收" HorizontalAlignment="Left" Margin="10,451,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <GridSplitter HorizontalAlignment="Stretch" Height="2" Margin="16,497,16,0" VerticalAlignment="Top"/>
+        <Label Content="已關閉此功能" HorizontalAlignment="Right" Margin="0,463,24,0" VerticalAlignment="Top" Foreground="#FF007FFD"/>
+        <Label Content="當該使用者驗收時，會顯示在此處。" HorizontalAlignment="Left" Margin="67,524,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="驗收" HorizontalAlignment="Left" Margin="10,600,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <GridSplitter HorizontalAlignment="Stretch" Height="2" Margin="16,646,16,0" VerticalAlignment="Top"/>
+        <Label Content="已關閉此功能" HorizontalAlignment="Right" Margin="0,612,24,0" VerticalAlignment="Top" Foreground="#FF007FFD"/>
+        <Label Content="當該使用者驗收時，會顯示在此處。" HorizontalAlignment="Left" Margin="67,673,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="上傳食登" HorizontalAlignment="Left" Margin="10,745,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <GridSplitter HorizontalAlignment="Stretch" Height="2" Margin="16,791,16,0" VerticalAlignment="Top"/>
+        <Label Content="已關閉此功能" HorizontalAlignment="Right" Margin="0,757,24,0" VerticalAlignment="Top" Foreground="#FF007FFD"/>
+        <Label Content="當該使用者上傳食登時，會顯示在此處。" HorizontalAlignment="Left" Margin="67,818,0,0" VerticalAlignment="Top" FontSize="20"/>
+
+    </Grid>
+</UserControl>

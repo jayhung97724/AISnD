@@ -40,3 +40,8 @@ This is the repo of a project designing desktop application using C# based on WP
 - 最新消息_主頁: `News`
     - 一則新聞: `News_Entry`
 - 食譜分享區: `Recipe_Sharing`
+
+## Week 6
+- 管理權限: `Permission`
+- 管理權限_開啟功能: `Permission_Control` (Missing [`ToggoleSwitch`](https://docs.microsoft.com/zh-tw/uwp/api/windows.ui.xaml.controls.toggleswitch))
+
